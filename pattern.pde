@@ -6,17 +6,7 @@ class Pattern
 
 	public void Pattern(int[] structure)
 	{
-		this.structure = structure;
-		int locmax = 0;
-		for(int i = 0; i <  structure.length; i++)
-		{
-			if(structure[i] > locmax)
-			{
-				locmax = structure[i];
-			}
-
-		}
-		this.max = locmax;
+		this.setStructure(structure);
 	}
 
 	public int[] getPattern()
@@ -58,5 +48,31 @@ class Pattern
 		}
 
 		return this.structure[this.pointer];
+	}
+
+	public void printStructure(int[] structure)
+	{
+		for(int i = 0; i <  structure.length; i++)
+		{
+			print(structure[i]);
+
+		}
+		println("");
+	}
+	public void setStructure(int[] structure)
+	{
+		//println("Setting structure to ");
+		//this.printStructure(structure);
+		this.structure = structure;
+		int locmax = 0;
+		for(int i = 0; i <  structure.length; i++)
+		{
+			if(structure[i] > locmax)
+			{
+				locmax = structure[i];
+			}
+
+		}
+		this.max = locmax;
 	}
 }

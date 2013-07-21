@@ -2,11 +2,7 @@
 
 public class BeatKeeper extends Bead
 {
-	/*protected int bpm = 60;
-	int tempo = 1000; // how long a sixteenth note is in milliseconds
-	int clock; // the timer for moving from note to note
-	long previousTime;
-    boolean isActive=true;*/
+	
     float interval;
 
 	ArrayList<BeatClient> clients;

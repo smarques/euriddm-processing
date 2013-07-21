@@ -9,6 +9,7 @@ import beads.*;
 ColorScheme[] colorSchemes;
 BeatKeeper beatKeeper;
 RhythmPlayer[] players;
+int trackNumber = 3;
 AudioContext audioContext;
 CirclesVisualizer circleVisualizer; 
 Gui gui; 
@@ -25,18 +26,14 @@ void setup()
   //frameRate(99999);
   beatKeeper = new BeatKeeper(90);
 
-  //beatKeeper.setBpm(120);
- //  maxim = new Maxim(this);
-  //EuclideanPattern euclides = new EuclideanPattern(7,10);
-  EuclideanPattern euclides2 = new EuclideanPattern(2,5);
-  EuclideanPattern euclides3 = new EuclideanPattern(3,7);
+ 
 
-
-  
-
-  RhythmPlayer player1 = new RhythmPlayer(new EuclideanPattern(7,10).getPattern(),3500);
-  RhythmPlayer player2 = new RhythmPlayer(euclides2.getPattern(),5000);
-  RhythmPlayer player3 = new RhythmPlayer(euclides3.getPattern(),1200);
+  RhythmPlayer player1 = new RhythmPlayer();
+  player1.setFrequency(3500);
+  RhythmPlayer player2 = new RhythmPlayer();
+   player2.setFrequency(5000);
+  RhythmPlayer player3 = new RhythmPlayer();
+   player3.setFrequency(1200);
   //players = new RhythmPlayer[];
   RhythmPlayer[] players = {player1, player2, player3 };
   this.players = players;
@@ -89,16 +86,8 @@ void mouseReleased()
 }
 
 void keyPressed() {
-  switch(keyCode){
-  	case 32:
-  		if(audioContext.isRunning())
-  		{audioContext.stop();}
-  		else{
-  			audioContext.start();
-  		}
-  		
-  	break;
-  }
+  gui.keyPressed(keyCode);
+  
 }
 
 

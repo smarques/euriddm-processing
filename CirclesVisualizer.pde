@@ -49,7 +49,7 @@ class CirclesVisualizer
 				//translate( xCenter,yCenter );
 			float currPerc = map(i,0,players.length-1,0.4,0.8);
 			//println(currPerc);
-  			ellipse( xCenter, yCenter, width * 0.8 * currPerc, 0.8 * height * currPerc);
+  			ellipse( xCenter, yCenter, width * 0.8 * currPerc + clevel*20, 0.8 * height * currPerc+ clevel*20);
   			if(currPlayer.isActive())
   			{
   				//println(currPlayer.getPatternLength());

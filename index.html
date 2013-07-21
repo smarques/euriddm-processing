@@ -13,7 +13,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Euriddm-processing by smarques</title>
+    <title>Euriddm-processing by Sergio Marchesini</title>
   </head>
 
   <body>
@@ -31,10 +31,12 @@
           <h1>
 <a name="euriddm-processing" class="anchor" href="#euriddm-processing"><span class="octicon octicon-link"></span></a>euriddm-processing</h1>
 
+
 <p>Euriddm is a pattern generator and visualizer.
 It overlays three separate rhythmic patterns.</p>
 
-<p>Each pattern is generated using Euclidean Rhythm (<a href="http://en.wikipedia.org/wiki/Euclidean_Rhythm">http://en.wikipedia.org/wiki/Euclidean_Rhythm</a>)</p>
+<p>Each pattern is generated using Euclidean Rhythm (<a href="http://en.wikipedia.org/wiki/Euclidean_Rhythm">http://en.wikipedia.org/wiki/Euclidean_Rhythm</a>)<br />
+Euclidean patterns are very interesting becouse they sound very 'human', and layering three of them with different pattern lengths and accents creates interesting effects, reminding a bit of the compositional approach of Steve Reich, Brian Eno, etc.</p>
 
 <p>The reference for implementing the algorhythm was this excellent paper by Godfried Toussaint: 
 <a href="http://cgm.cs.mcgill.ca/%7Egodfried/publications/banff.pdf">http://cgm.cs.mcgill.ca/~godfried/publications/banff.pdf</a></p>
@@ -42,7 +44,43 @@ It overlays three separate rhythmic patterns.</p>
 <p>I changed the algorhythm slightly to include multiple accent dynamic, so that each measure has one main accent but can 
 also have seconday accents.</p>
 
-<p>This code was written in the Processing Environment and uses the following open source libraries:</p>
+<h2>
+<a name="euriddm-screenshots" class="anchor" href="#euriddm-screenshots"><span class="octicon octicon-link"></span></a>screenshots</h2>
+<p>
+  <img src="img/EuRiddm1.png" />
+  <img src="img/EuRiddm2.png" />
+</p>
+
+
+
+<h2>
+<a name="euriddm-binaries" class="anchor" href="#euriddm-binaries"><span class="octicon octicon-link"></span></a>binaries</h2>
+<p>
+  <b>Disclaimer:</b> Well, as you might have guessed, <b>this software is provided AS IS</b>, be careful, it might set your house on fire, run away with all your belongings, feed your cat bad catfood.<br />
+  Sorry about that.<br />
+  Wanna fixit or make it better? Please send a pull request on github.
+  <ul>
+    <li><a href="binaries/euRiddm.macosx.zip">MacOs</a></li>
+     <li><a href="binaries/euRiddm.macosx.zip">Linux32</a></li>
+      <li><a href="binaries/euRiddm.macosx.zip">Linux64</a></li>
+       <li><a href="binaries/euRiddm.macosx.zip">Windows32</a></li>
+        <li><a href="binaries/euRiddm.macosx.zip">Windows64</a></li>
+  </ul>
+</p>
+
+<h2>
+<a name="euriddm-futureplans" class="anchor" href="#euriddm-futureplans"><span class="octicon octicon-link"></span></a>future plans</h2>
+<p>If you'd like to help add new features please contact me on github.
+  <ul>
+    <li>Javascript version?</li>
+    <li>Mobile version</li>
+    <li>OSC controller option</li>
+    <li>Better sound, sample loading</li>
+  </ul>
+</p>
+<h2>
+<a name="euriddm-credits" class="anchor" href="#euriddm-credits"><span class="octicon octicon-link"></span></a>credits</h2>
+<p>This code was written in the <a href="http://processing.org">Processing</a> Environment and uses the following open source libraries:</p>
 
 <p>controlP5:
 <a href="http://www.sojamo.de/libraries/controlP5/">http://www.sojamo.de/libraries/controlP5/</a></p>
@@ -52,6 +90,14 @@ also have seconday accents.</p>
         </section>
 
         <aside id="sidebar">
+          <ul class="navMenu">
+            <li>
+              <a href="#euriddm-processing">EuRiddm</a>
+              <a href="#euriddm-screenshots">Screenshots</a>
+              <a href="#euriddm-futureplans">Future Plans</a>
+              <a href="#euriddm-credits">Credits</a>
+            </li>
+          </ul>
           <a href="https://github.com/smarques/euriddm-processing/zipball/master" class="button">
             <small>Download</small>
             .zip file
